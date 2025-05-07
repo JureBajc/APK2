@@ -1,109 +1,25 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-<style>
-    body {
-        font-family: Arial, sans-serif;
-    }
-
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .header {
-        margin-bottom: 30px;
-    }
-
-    .header h1 {
-        font-size: 2.5em;
-        margin-bottom: 10px;
-    }
-
-    .header p {
-        font-size: 1.2em;
-        color: #555;
-    }
-
-    .features {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .feature-card {
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 20px;
-        width: 300px;
-        text-align: center;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .feature-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-    }
-
-    .feature-card h2 {
-        font-size: 1.5em;
-        margin-bottom: 10px;
-    }
-
-    .feature-card p {
-        font-size: 1em;
-        color: #666;
-        margin-bottom: 20px;
-    }
-
-    .feature-card a {
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 1em;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        background-color: #007bff;
-        transition: background-color 0.2s;
-    }
-
-    .feature-card a:hover {
-        background-color: #0056b3;
-    }
-
-    .footer {
-        margin-top: 40px;
-        font-size: 0.9em;
-        color: #777;
-    }
-</style>
-
+<link rel="stylesheet" href="~/css/custom-style.css" />
 <div class="container">
     <div class="header">
         <h1>Welcome to APKtest</h1>
     </div>
 
     <div class="features">
-        <!-- Merilna Naprava Section -->
         <div class="feature-card">
             <h2>Merilna Naprava</h2>
             <p>Manage and view all your measurement devices.</p>
             <a href="/Merilna_Naprava">Go to Merilna Naprava</a>
         </div>
 
-        <!-- Meritve Section -->
         <div class="feature-card">
             <h2>Meritve</h2>
             <p>Access and analyze measurement data.</p>
             <a href="/MeritveAs">Go to Meritve</a>
         </div>
 
-        <!-- Metrolog Section -->
         <div class="feature-card">
             <h2>Metrolog</h2>
             <p>Manage metrologs and their associated data.</p>
