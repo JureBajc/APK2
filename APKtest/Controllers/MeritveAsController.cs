@@ -49,8 +49,12 @@ namespace APKtest.Controllers
         // GET: MeritveAs/Create
         public IActionResult Create()
         {
-            ViewData["Merilna_NapravaId"] = new SelectList(_context.Merilna_Naprava, "Id", "Id");
-            ViewData["MetrologId"] = new SelectList(_context.Metrolog, "Id", "Id");
+            ViewData["Merilna_NapravaId"] = new SelectList(_context.Merilna_Naprava, "Id", "Ime");
+            ViewData["MetrologId"] = new SelectList(_context.Metrolog.Select(m => new {
+                m.Id,
+                FullName = m.Ime + " " + m.Priimek
+            }), "Id", "FullName");
+
             return View();
         }
 
